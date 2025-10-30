@@ -1,5 +1,5 @@
 /* ------------------- */
-/* Custom properties */
+/* Custom properties   */
 /* ------------------- */
 
 :root {
@@ -94,7 +94,7 @@ input, button, textarea, select {
 /* .flow > * + * { */
 .flow > *:where(:not(:first-child)){
     margin-top: var(--flow-space, 1rem);
-    outline: 1px solid red;
+    
 }
 
 .container {
@@ -163,4 +163,45 @@ input, button, textarea, select {
     margin-right: .5em;
     font-weight: 700;
     color: hsl( var(--clr-white) / .25);
+}
+
+/* ------------------- */
+/* Components          */
+/* ------------------- */
+
+.large-button {
+    position: relative;
+    display: grid;
+    z-index: 1;
+    aspect-ratio: 1;
+    place-items: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    /* letter-spacing: 2.7px; */
+    padding: 0 2em;
+    border-radius: 50%;
+    /* border: none; */
+    cursor: pointer;
+    /* transition: background-color 0.3s ease, color 0.3s ease; */
+}
+
+.large-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: hsl( var(--clr-white) / .15);
+    border-radius: 50%;
+    opacity: 0;
+    /* box-shadow: 0 0 0 0 hsl( var(--clr-accent) / 0.5); */
+    transition: opacity 500ms linear, transform 500ms ease-in-out;
+    z-index: -1; 
+}
+
+.large-button:hover::after, 
+.large-button:focus::after {
+    opacity: 1;
+    transform: scale(1.5);
 }
