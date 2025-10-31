@@ -1,147 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="index.css" />
     <title>Design System</title>
-</head>
-<body>
-    
+  </head>
+  <body>
     <div class="container">
-        <h1>Design System</h1>
+      <h1>Design System</h1>
 
-        <section id="colors">
-            <h2 class="numbered-title"><span>01 </span>colors</h2>
+      <section id="colors">
+        <h2 class="numbered-title"><span>01 </span>colors</h2>
 
-            <div class="flex">
-                <div style="flex-grow: 1;">
-                <div class="bg-dark text-white" style="padding: 3rem 1rem 1rem; border: 1px solid white;">
-                    #0B0D17
-                </div>
-                <p><span class="text-accent">RGB</span>11, 13, 23</p>
-                <p><span class="text-accent">HSL</span>230, 35% 7%</p>
+        <div class="flex">
+          <div style="flex-grow: 1">
+            <div
+              class="bg-dark text-white"
+              style="padding: 3rem 1rem 1rem; border: 1px solid white"
+            >
+              #0B0D17
+            </div>
+            <p><span class="text-accent">RGB</span>11, 13, 23</p>
+            <p><span class="text-accent">HSL</span>230, 35% 7%</p>
+          </div>
+
+          <div style="flex-grow: 1">
+            <div
+              class="bg-accent text-dark"
+              style="padding: 3rem 1rem 1rem; border: 1px solid white"
+            >
+              #0B0D17
+            </div>
+            <p><span class="text-accent">RGB</span>11, 13, 23</p>
+            <p><span class="text-accent">HSL</span>230, 35% 7%</p>
+          </div>
+
+          <div style="flex-grow: 1">
+            <div
+              class="bg-white text-dark"
+              style="padding: 3rem 1rem 1rem; border: 1px solid white"
+            >
+              #0B0D17
+            </div>
+            <p><span class="text-accent">RGB</span>11, 13, 23</p>
+            <p><span class="text-accent">HSL</span>230, 35% 7%</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="typography" style="margin: 4rem">
+        <h2 class="numbered-title"><span>02 </span>Typography</h2>
+
+        <div class="flex">
+          <div class="flow" style="flex-basis: 100%">
+            <div>
+              <p class="text-accent">Heading 1 - Bellefair Regular</p>
+              <p class="fs-900 ff-serif uppercase">Earth</p>
+            </div>
+            <div>
+              <p class="text-accent">Heading 2 - Bellefair Regular</p>
+              <p class="fs-800 ff-serif uppercase">Venus</p>
+            </div>
+            <div>
+              <p class="text-accent">Heading 3 - Bellefair Regular</p>
+              <p class="fs-700 ff-serif uppercase">Jupiter & Saturn</p>
+            </div>
+            <div>
+              <p class="text-accent">Heading 4 - Bellefair Regular</p>
+              <p class="fs-600 ff-serif uppercase">Uranus & Neptune</p>
+            </div>
+            <div>
+              <p class="text-accent">
+                Heading 5 - Barlow Condensed Regular - 75 character space
+              </p>
+              <p
+                class="text-accent fs-500 ff-sans-cond uppercase letter-spacing-1"
+              >
+                Space capsule
+              </p>
+            </div>
+          </div>
+
+          <div style="flex-basis: 100%">
+            <div>
+              <p class="text-accent">Subheading 1 - Bellefair Regular</p>
+              <p class="fs-400 ff-serif uppercase">384,400 km</p>
+            </div>
+            <div>
+              <p class="text-accent">Subheading 2 - Barlow Condensed Regular</p>
+              <p class="fs-300 ff-sans-cond uppercase">Avg Distance</p>
+            </div>
+            <div>
+              <p class="text-accent">Subheading 3 - Barlow Regular</p>
+              <p class="fs-200 ff-sans-normal uppercase">Space unbound</p>
+            </div>
+            <div>
+              <p class="text-accent ff-sans-normal">
+                Subheading 4 - Barlow Regular
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                id dolorem excepturi, expedita accusantium possimus nesciunt
+                odit modi omnis consequuntur?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="flow" id="interactive-elements">
+        <h2 class="numbered-title"><span>03</span>Buttons</h2>
+
+        <!-- Navigation -->
+        <div>
+          <nav>
+            <ul class="primary-navigation underline-indicators flex">
+              <li class="active">
+                <a class="uppercase text-white letter-spacing-2" href="#"
+                  ><span>01</span>Active</a
+                >
+              </li>
+              <li>
+                <a class="uppercase text-white letter-spacing-2" href="#"
+                  ><span>02</span>Hovered</a
+                >
+              </li>
+              <li>
+                <a class="uppercase text-white letter-spacing-2" href="#"
+                  ><span>03</span>Idle</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="flex">
+          <div style="margin-top: 5rem">
+            <!-- Explore button -->
+            <a
+              href="#"
+              class="large-button uppercase ff-serif fs-600 bg-white text-dark"
+              >explore</a
+            >
+          </div>
+
+          <div class="flow" style="margin-bottom: 50vh; --flow-space: 4rem">
+            <!-- Tabs -->
+            <div
+              class="tab-list underline-indicators flex"
+              role="tablist"
+              aria-label="Space Tourism Destinations"
+            >
+              <button
+                aria-selected="true"
+                class="ff-sans-cond uppercase bg-dark text-accent letter-spacing-2"
+              >
+                Moon
+              </button>
+              <button
+                aria-selected="false"
+                class="ff-sans-cond uppercase bg-dark text-accent letter-spacing-2"
+              >
+                Mars
+              </button>
+              <button
+                aria-selected="false"
+                class="ff-sans-cond uppercase bg-dark text-accent letter-spacing-2"
+              >
+                Europa
+              </button>
             </div>
 
-            <div style="flex-grow: 1;">
-                <div class="bg-accent text-dark" style="padding: 3rem 1rem 1rem; border: 1px solid white;">
-                    #0B0D17
-                </div>
-                <p><span class="text-accent">RGB</span>11, 13, 23</p>
-                <p><span class="text-accent">HSL</span>230, 35% 7%</p>
+            <!-- Dots -->
+            <div class="dot-indicators flex">
+              <button aria-selected="true">
+                <span class="sr-only">Tab title</span>
+              </button>
+              <button aria-selected="false">
+                <span class="sr-only">Tab title</span>
+              </button>
+              <button aria-selected="false">
+                <span class="sr-only">Tab title</span>
+              </button>
             </div>
 
-            <div style="flex-grow: 1;">
-                <div class="bg-white text-dark" style="padding: 3rem 1rem 1rem; border: 1px solid white;">
-                    #0B0D17
-                </div>
-                <p><span class="text-accent">RGB</span>11, 13, 23</p>
-                <p><span class="text-accent">HSL</span>230, 35% 7%</p>
-            </div>
-            </div>
-        </section>
-
-        <section id="typography" style="margin: 4rem;">
-            <h2 class="numbered-title"><span>02 </span>Typography</h2>
-
-            <div class="flex">
-                <div class="flow" style="flex-basis: 100%;">
-                    <div>
-                        <p class="text-accent">Heading 1 - Bellefair Regular</p>
-                        <p class="fs-900 ff-serif uppercase">Earth</p>
-                    </div>
-                    <div>
-                        <p class="text-accent">Heading 2 - Bellefair Regular</p>
-                        <p class="fs-800 ff-serif uppercase">Venus</p>
-                    </div>
-                    <div>
-                        <p class="text-accent">Heading 3 - Bellefair Regular</p>
-                        <p class="fs-700 ff-serif uppercase">Jupiter & Saturn</p>
-                    </div>
-                    <div>
-                        <p class="text-accent">Heading 4 - Bellefair Regular</p>
-                        <p class="fs-600 ff-serif uppercase">Uranus & Neptune</p>
-                    </div>
-                    <div>
-                        <p class="text-accent">Heading 5 - Barlow Condensed Regular - 75 character space</p>
-                        <p class="text-accent fs-500 ff-sans-cond uppercase letter-spacing-1">Space capsule</p>
-                    </div>
-                    
-                    
-                </div>
-
-                <div style="flex-basis: 100%;">
-                    <div>
-                        <p class="text-accent">Subheading 1 - Bellefair Regular</p>
-                        <p class="fs-400 ff-serif uppercase">384,400 km</p>
-                    </div>
-                    <div>
-                        <p class="text-accent">Subheading 2 - Barlow Condensed Regular</p>
-                        <p class="fs-300 ff-sans-cond uppercase">Avg Distance</p>
-                    </div>
-                    <div>
-                        <p class="text-accent">Subheading 3 - Barlow Regular</p>
-                        <p class="fs-200 ff-sans-normal uppercase">Space unbound</p>
-                    </div>
-                    <div>
-                        <p class="text-accent ff-sans-normal">Subheading 4 - Barlow Regular</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor id dolorem excepturi, expedita accusantium possimus nesciunt odit modi omnis consequuntur?</p>
-                    </div>                   
-                    
-                </div>
-
-
-            </div>
-        </section>
-
-        <section class="flow" id="interactive-elements">
-            <h2 class="numbered-title"><span>03</span>Buttons</h2>
-
-            <!-- Navigation -->
-             <div>
-                <nav>
-                    <ul class="primary-navigation underline-indicators flex">
-                        <li class="active"><a class="uppercase text-white letter-spacing-2" href="#"><span>01</span>Active</a></li>
-                        <li><a class="uppercase text-white letter-spacing-2" href="#"><span>02</span>Hovered</a></li>
-                        <li><a class="uppercase text-white letter-spacing-2" href="#"><span>03</span>Idle</a></li>
-                    </ul>
-                </nav>
-             </div>
-
-             <div class="flex">
-                <div style="margin-top: 5rem;">
-                    <!-- Explore button -->
-                     <a href="#" class="large-button uppercase ff-serif fs-600 bg-white text-dark">explore</a>
-                </div>
-
-                <div class="flow" style="margin-bottom: 50vh; --flow-space:4rem;">
-                    <!-- Tabs -->
-                     <div class="tab-list underline-indicators flex" role="tablist" aria-label="Space Tourism Destinations">
-                            <button aria-selected="true" class="ff-sans-cond uppercase bg-dark text-accent letter-spacing-2">Moon</button>
-                            <button aria-selected="false" class="ff-sans-cond uppercase bg-dark text-accent letter-spacing-2">Mars</button>
-                            <button aria-selected="false" class="ff-sans-cond uppercase bg-dark text-accent letter-spacing-2">Europa</button>
-                        </div>
-
-                    <!-- Dots -->
-                       <div class="dot-indicators flex">
-                            <button aria-selected="true"><span class="sr-only">Tab title</span></button>
-                            <button aria-selected="false"><span class="sr-only">Tab title</span></button>
-                            <button aria-selected="false"><span class="sr-only">Tab title</span></button>
-                        </div>
-                        
-
-                    <!-- Numbers -->
-                </div>
-
-            
-             </div>
-        </section>
+            <!-- Numbers -->
+          </div>
+        </div>
+      </section>
     </div>
 
     <script src="index.pack.js"></script>
-</body>
+  </body>
 </html>
