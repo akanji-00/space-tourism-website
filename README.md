@@ -48,7 +48,7 @@ Desktop view
 ### Links
 
 - Solution URL: [GitHub URL](https://github.com/akanji-00/space-tourism-website.git)
-- Live Site URL: [Add live site URL here](https://boisterous-kataifi-e7fa33.netlify.app/)
+- Live Site URL: [Netlify URL](https://boisterous-kataifi-e7fa33.netlify.app/)
 
 ## My process
 
