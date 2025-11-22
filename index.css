@@ -465,6 +465,26 @@ select {
   background-color: hsl(var(--clr-white) / 1);
 }
 
+.numbered-indicators > * {
+  cursor: pointer;
+  border: 1px solid hsl(var(--clr-white) / 0.5);
+  border-radius: 50%;
+  aspect-ratio: 1;
+  background-color: transparent;
+  color: hsl(var(--clr-white));
+  font-size: 1.7rem;
+  display: inline-grid;
+  place-items: center;
+  padding: 0 1em;
+}
+
+.numbered-indicators > *:hover,
+.numbered-indicators > *:focus,
+.numbered-indicators > [aria-selected="true"] {
+  background-color: hsl(var(--clr-white) / 1);
+  color: hsl(var(--clr-dark));
+}
+
 /* ----------------------------- */
 /* Page specific background images   */
 /* ----------------------------- */
@@ -523,6 +543,24 @@ body {
 @media (min-width: 45rem) {
   .crew {
     background-image: url(./assets/crew/background-crew-desktop.jpg);
+  }
+}
+
+/* technology */
+.technology {
+  background-image: url(./assets/technology/background-technology-mobile.jpg);
+}
+
+@media (min-width: 35rem) {
+  .technology {
+    background-position: center center;
+    background-image: url(./assets/technology/background-technology-tablet.jpg);
+  }
+}
+
+@media (min-width: 45rem) {
+  .technology {
+    background-image: url(./assets/technology/background-technology-desktop.jpg);
   }
 }
 
@@ -611,6 +649,35 @@ body {
   color: hsl(var(--clr-white) / 0.5);
 }
 
+/* technology layout */
+
+.grid-container--technology {
+  --flow-space: 2rem;
+  grid-template-areas:
+    "title"
+    "image"
+    "tabs"
+    "content";
+}
+
+.grid-container--technology > picture {
+  grid-area: image;
+  max-width: 60%;
+  border-bottom: 1px solid hsl(var(--clr-white) / 0.1);
+}
+
+.grid-container--technology > .numbered-indicators {
+  grid-area: tabs;
+}
+
+.grid-container--technology > .technology-info {
+  grid-area: content;
+}
+
+.technology-info h2 {
+  font-size: var(--fs-200);
+}
+
 @media (min-width: 35em) {
   .numbered-title {
     justify-self: start;
@@ -691,4 +758,36 @@ body {
     align-self: end;
     max-width: 80%;
   }
+
+  .numbered-indicators {
+    flex-direction: column;
+  }
+
+  .grid-container--technology {
+    padding-inline: 0;
+    --container-gap: 5rem;
+    justify-items: start;
+    grid-template-columns:
+      minmax(5rem, 1fr) minmax(0, 5rem) minmax(0, 30rem) minmax(0, 15rem)
+      minmax(1rem, 1fr);
+    grid-template-areas:
+      ". title title ."
+      ". tabs content image"
+      ". tabs content image";
+  }
+
+  .grid-container--technology > picture {
+    grid-column: span 2;
+    max-width: 100%;
+
+    justify-self: end;
+  }
+
+  /* .grid-container--technology > picture {
+    grid-column: span 2;
+    align-self: end;
+    max-width: 100%;
+  } */
 }
+
+/* Technology layout */
