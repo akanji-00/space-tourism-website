@@ -28,22 +28,22 @@ Users should be able to:
 ### Screenshot
 
 Mobile view
-![Home page](./assets/screenshots/mobile/mobile-home-shot.png.jpg)
-![Destination page](./assets/screenshots/mobile/mobile-destination-shot.png.jpg)
-![Crew page](./assets/screenshots/mobile/mobile-crew-shot.png.jpg)
-![Technology page](./assets/screenshots/mobile/mobile-technology-shot.png.jpg)
+![Home page](./assets/screenshots/mobile/mobile-home-shot.png)
+![Destination page](./assets/screenshots/mobile/mobile-destination-shot.png)
+![Crew page](./assets/screenshots/mobile/mobile-crew-shot.png)
+![Technology page](./assets/screenshots/mobile/mobile-technology-shot.png)
 
 Tablet view
-![Home page](./assets/screenshots/tablet/tablet-home-shot.png.jpg)
-![Destination page](./assets/screenshots/tablet/tablet-destination-shot.png.jpg)
-![Crew page](./assets/screenshots/tablet/tablet-crew-shot.png.jpg)
-![Technology page](./assets/screenshots/tablet/tablet-technology-shot.png.jpg)
+![Home page](./assets/screenshots/tablet/tablet-home-shot.png)
+![Destination page](./assets/screenshots/tablet/tablet-destination-shot.png)
+![Crew page](./assets/screenshots/tablet/tablet-crew-shot.png)
+![Technology page](./assets/screenshots/tablet/tablet-technology-shot.png)
 
 Desktop view
-![Home page](./assets/screenshots/desktop/desktop-home-shot.png.jpg)
-![Destination page](./assets/screenshots/desktop/desktop-destination-shot.png.jpg)
-![Crew page](./assets/screenshots/desktop/desktop-crew-shot.png.jpg)
-![Technology page](./assets/screenshots/desktop/desktop-technology-shot.png.jpg)
+![Home page](./assets/screenshots/desktop/desktop-home-shot.png)
+![Destination page](./assets/screenshots/desktop/desktop-destination-shot.png)
+![Crew page](./assets/screenshots/desktop/desktop-crew-shot.png)
+![Technology page](./assets/screenshots/desktop/desktop-technology-shot.png)
 
 ### Links
 
