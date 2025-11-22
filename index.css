@@ -652,6 +652,7 @@ body {
 /* technology layout */
 
 .grid-container--technology {
+  padding-inline: 0;
   --flow-space: 2rem;
   grid-template-areas:
     "title"
@@ -660,9 +661,17 @@ body {
     "content";
 }
 
+.grid-container--technology > picture > .mobile-image--technology {
+  display: block;
+}
+
+.grid-container--technology > picture > .desktop-image--technology {
+  display: none;
+}
+
 .grid-container--technology > picture {
   grid-area: image;
-  max-width: 60%;
+  max-width: 100%;
   border-bottom: 1px solid hsl(var(--clr-white) / 0.1);
 }
 
@@ -672,6 +681,11 @@ body {
 
 .grid-container--technology > .technology-info {
   grid-area: content;
+}
+
+.technology-info {
+  margin-inline: auto;
+  padding-inline: 1rem;
 }
 
 .technology-info h2 {
@@ -697,6 +711,10 @@ body {
       "content"
       "tabs"
       "image";
+  }
+
+  .grid-container--technology h1 {
+    margin-left: 5rem;
   }
 }
 
@@ -753,6 +771,14 @@ body {
       ". tabs image .";
   }
 
+  .grid-container--technology > picture > .mobile-image--technology {
+    display: none;
+  }
+
+  .grid-container--technology > picture > .desktop-image--technology {
+    display: block;
+  }
+
   .grid-container--crew > picture {
     grid-column: span 2;
     align-self: end;
@@ -764,7 +790,6 @@ body {
   }
 
   .grid-container--technology {
-    padding-inline: 0;
     --container-gap: 5rem;
     justify-items: start;
     grid-template-columns:
@@ -782,12 +807,6 @@ body {
 
     justify-self: end;
   }
-
-  /* .grid-container--technology > picture {
-    grid-column: span 2;
-    align-self: end;
-    max-width: 100%;
-  } */
 }
 
 /* Technology layout */

@@ -121,12 +121,12 @@
       <!-- Vehicle article -->
       <article
         class="technology-info flow"
-        id="technology-tab"
+        id="vehicle-tab"
         tabindex="0"
         role="tabpanel"
       >
         <header class="flow flow--space-small">
-          <h2 class="ff-sans-cond uppercase letter-spacing-2">
+          <h2 class="ff-sans-cond uppercase letter-spacing-3">
             The terminology...
           </h2>
           <p class="fs-700 uppercase ff-serif">Launch vehicle</p>
@@ -140,11 +140,90 @@
         </p>
       </article>
 
+      <!-- Capsule article -->
+      <article
+        hidden
+        class="technology-info flow"
+        id="capsule-tab"
+        tabindex="0"
+        role="tabpanel"
+      >
+        <header class="flow flow--space-small">
+          <h2 class="ff-sans-cond uppercase letter-spacing-3">
+            The terminology...
+          </h2>
+          <p class="fs-700 uppercase ff-serif">Space capsule</p>
+        </header>
+        <p>
+          A space capsule is an often-crewed spacecraft that uses a blunt-body
+          reentry capsule to reenter the Earth's atmosphere without wings. Our
+          capsule is where you'll spend your time during the flight. It includes
+          a space gym, cinema, and plenty of other activities to keep you
+          entertained.
+        </p>
+      </article>
+
+      <!-- Spaceport article -->
+      <article
+        hidden
+        class="technology-info flow"
+        id="spaceport-tab"
+        tabindex="0"
+        role="tabpanel"
+      >
+        <header class="flow flow--space-small">
+          <h2 class="ff-sans-cond uppercase letter-spacing-3">
+            The terminology...
+          </h2>
+          <p class="fs-700 uppercase ff-serif">Spaceport</p>
+        </header>
+        <p>
+          A spaceport or cosmodrome is a site for launching (or receiving)
+          spacecraft, by analogy to the seaport for ships or airport for
+          aircraft. Based in the famous Cape Canaveral, our spaceport is ideally
+          situated to take advantage of the Earth’s rotation for launch.
+        </p>
+      </article>
+
       <!-- Vehicle image -->
       <picture id="vehicle-image">
         <img
           src="/assets/technology/image-launch-vehicle-portrait.jpg"
           alt="Launch Vehicle"
+          class="desktop-image--technology"
+        />
+        <img
+          src="/assets/technology/image-launch-vehicle-landscape.jpg"
+          alt="Launch Vehicle"
+          class="mobile-image--technology"
+        />
+      </picture>
+
+      <!-- Space capsule image -->
+      <picture hidden id="capsule-image">
+        <img
+          src="/assets/technology/image-space-capsule-portrait.jpg"
+          alt="Space capsule"
+          class="desktop-image--technology"
+        />
+        <img
+          src="/assets/technology/image-space-capsule-landscape.jpg"
+          alt="Space capsule"
+          class="mobile-image--technology"
+        />
+      </picture>
+
+      <!-- Spaceport image -->
+      <picture hidden id="spaceport-image">
+        <img
+          src="/assets/technology/image-spaceport-portrait.jpg"
+          alt="Spaceport"
+          class="desktop-image--technology"
+        />
+        <img
+          src="/assets/technology/image-spaceport-landscape.jpg"
+          alt="Spaceport"
+          class="mobile-image--technology"
         />
       </picture>
     </main>
